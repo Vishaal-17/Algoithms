@@ -1,0 +1,134 @@
+1. Sum of Even no.
+STOP
+PRINT "Enter a value for n: ",n
+    sum = 0
+    FOR i = 2 
+        sum = sum + i
+    PRINT "The sum of all even numbers from 1 to", n, "is:", sum
+STOP
+
+2. Factorial using Recursion
+START
+    PRINT "Enter a number: "
+    READ n
+    result = factorial(n)
+    PRINT "The factorial of", n, "is:", result
+
+FUNCTION factorial(n)
+    IF n == 0 THEN
+        Base case: 0! = 1
+    ELSE
+        RETURN n * factorial(n-1) // Recursive case: n! = n * (n-1)!
+END FUNCTION
+STOP
+
+3.Prime number check
+START
+    PRINT "Enter a number:"
+    READ n
+    IF n<2
+         PRINT "not a prime number"
+    ELSE 
+        i=2
+        IF i*i>n
+              PRINT "prime no." , n
+         ELSE 
+              PEINT "not a prime no." , n
+STOP
+
+4.Largest number in an array
+START
+    PRINT "Enter the number of elements: "
+    READ n
+    DECLARE array[n]
+    PRINT "Enter the elements: "
+    FOR i = 0 TO n-1
+        READ array[i]
+    END FOR
+    largest = array[0]
+    FOR i = 1 TO n-1 DO
+        IF array[i] > largest
+            largest = array[i]
+        END IF
+    END FOR
+    PRINT "The largest number is: ", largest
+STOP
+
+5. Simple Interest Calculation
+START
+    PRINT "Enter the Principal amount (P): "
+    READ P
+    PRINT "Enter the Rate of interest (R): "
+    READ R
+    PRINT "Enter the Time period in years (T): "
+    READ T
+    SI = (P * R * T) / 100
+    PRINT "The Simple Interest is: ", SI
+STOP
+
+6.Fibonacci Series
+START
+    PRINT "Enter the number of terms (n): "
+    READ n
+    a = 0
+    b = 1
+    PRINT a
+    PRINT b
+    FOR i = 3 TO n DO
+        c = a + b      
+        PRINT c        
+        a = b           
+        b = c       
+    END FOR
+STOP
+
+7.Number Game
+START
+    SecretNumber = rand() % 100 + 1
+        PRINT "Enter your guess (1 to 100): "
+        READ userGuess
+        IF userGuess == SecretNumber
+            PRINT "Correct! You guessed the number."
+        ELSE
+            IF userGuess < SecretNumber THEN
+                PRINT "Higher!"
+            ELSE
+                PRINT "Lower!"
+STOP
+
+8.Temperature conversion
+START
+    PRINT "Enter the temperature in Celsius: "
+    READ Celsius
+    Fahrenheit = (Celsius × 9 / 5) + 32
+    PRINT "The temperature in Fahrenheit is: ", Fahrenheit
+STOP
+
+9.
+START
+    PRINT "Enter a string: "
+    READ inputString
+    vowelCount = 0
+    FOR each character in inputString DO
+        IF character == 'a' OR character == 'e' OR character == 'i' OR 
+           character == 'o' OR character == 'u' OR 
+           character == 'A' OR character == 'E' OR 
+           character == 'I' OR character == 'O' OR 
+           character == 'U' THEN
+            vowelCount = vowelCount + 1
+    PRINT "The number of vowels is: ", vowelCount
+STOP
+
+10.GCD of two numbers
+START
+    PRINT "Enter the first number: "
+    READ a
+    PRINT "Enter the second number: "
+    READ b
+    WHILE b ≠ 0 DO
+        remainder = a % b
+        a = b
+        b = remainder
+    PRINT "The GCD of the given numbers is: ", a
+STOP
+
