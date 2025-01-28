@@ -1,0 +1,9 @@
+Start
+Read input a and b
+if b = 0
+GCD = a and print GCD and  Stop
+else
+a % b
+Set a = b and b = remainder
+Repeat until b = 0
+Stop
