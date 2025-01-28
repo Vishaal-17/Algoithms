@@ -18,7 +18,7 @@ FUNCTION factorial(n)
     IF n == 0 THEN
         Base case: 0! = 1
     ELSE
-        RETURN n * factorial(n-1) // Recursive case: n! = n * (n-1)!
+        RETURN n * factorial(n-1) 
 END FUNCTION
 STOP
 
@@ -44,13 +44,10 @@ START
     PRINT "Enter the elements: "
     FOR i = 0 TO n-1
         READ array[i]
-    END FOR
     largest = array[0]
     FOR i = 1 TO n-1 DO
         IF array[i] > largest
             largest = array[i]
-        END IF
-    END FOR
     PRINT "The largest number is: ", largest
 STOP
 
@@ -78,8 +75,7 @@ START
         c = a + b      
         PRINT c        
         a = b           
-        b = c       
-    END FOR
+        b = c   
 STOP
 
 7.Number Game
