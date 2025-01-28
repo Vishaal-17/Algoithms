@@ -1,0 +1,7 @@
+Start
+Read input string
+vowelcount=0
+if the character is a vowel (a, e, i, o, u, or their uppercase equivalents)
+If yes, increment vowelCount
+print vowelCount
+Stop
