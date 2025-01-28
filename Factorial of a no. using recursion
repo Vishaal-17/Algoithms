@@ -1,0 +1,9 @@
+Start
+Read the input n
+if n<0
+print "Cannot enter negative value"
+else factorial(n)
+if n==0 or n==1
+return 1
+else n*factorial(n-1)
+Stop
