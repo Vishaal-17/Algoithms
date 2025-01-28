@@ -1,0 +1,5 @@
+Start
+Read the input R, P and T
+SI= R*P*T/100
+print SI
+Stop
