@@ -1,0 +1,9 @@
+Start
+Read input userguess
+SecretNumber= rand() % 100 + 1
+if userGuess == secretNumber
+print "Correct! You guessed the number."
+else
+ If userGuess < secretNumber, display "Higher!"
+ If userGuess > secretNumber, display "Lower!"
+Stop
