@@ -1,0 +1,12 @@
+Start
+Read the input n 
+a = 0
+b = 1
+i = 0
+While i < n
+Print a 
+next_term = a + b
+Set a = b
+Set b = next_term
+Increment i
+End Loop
