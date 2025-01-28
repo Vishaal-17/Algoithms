@@ -1,0 +1,8 @@
+Start
+Input n and array elements
+max = array[0]
+For i = 1 to n-1
+Compare array[i] > max
+If true: Set max = array[i]
+Display max
+Stop
