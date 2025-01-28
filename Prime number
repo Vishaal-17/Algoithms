@@ -1,0 +1,7 @@
+Start
+Read the input n
+if n<2 then print"not a prime number"
+else i=2
+check if i*i>n then print "prime no." and Stop
+else n%i==0 print"not a prime no." 
+Stop
